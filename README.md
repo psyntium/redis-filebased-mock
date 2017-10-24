@@ -1,10 +1,10 @@
-redis-mock
+redis-filebased-mock
 ============
 
 [![NPM](https://nodei.co/npm/redis-filebased-mock.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/redis-filebased-mock/)
 
-[![Build Status](https://travis-ci.org/psyntium/redis-mock.svg?branch=master)](https://travis-ci.org/psyntium/redis-mock)
-[![Coverage Status](https://coveralls.io/repos/psyntium/redis-mock/badge.svg)](https://coveralls.io/r/psyntium/redis-mock)
+[![Build Status](https://travis-ci.org/psyntium/redis-filebased-mock.svg?branch=master)](https://travis-ci.org/psyntium/redis-filebased-mock)
+[![Coverage Status](https://coveralls.io/repos/psyntium/redis-filebased-mock/badge.svg)](https://coveralls.io/r/psyntium/redis-filebased-mock)
 
 The goal of the `redis-filebased-mock` project is to create a feature-complete mock of [node_redis](https://github.com/NodeRedis/node_redis), which may be used interchangeably when writing unit tests for code that depends on `redis`. `redis-filebased-mock` is a fork from `redis-mock`.
 
