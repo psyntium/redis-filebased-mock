@@ -1,13 +1,13 @@
 {
-  "name": "redis-mock",
+  "name": "redis-filebased-mock",
   "version": "0.19.0",
   "description": "Redis client mock object for unit testing",
-  "author": "Kristian Faeldt <kristian.faeldt@gmail.com>",
+  "author": "Aiman Shaharuddin <psyntium@gmail.com>",
   "main": "./lib/redis-mock",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yeahoffline/redis-mock"
+    "url": "https://github.com/psyntium/redis-filebased-mock"
   },
   "devDependencies": {
     "eslint": "^2.10.2",
@@ -21,6 +21,7 @@
   "keywords": [
     "redis",
     "redis-mock",
+    "redis-filebased-mock",
     "mock-redis",
     "redis test",
     "redis mock",
@@ -32,9 +33,11 @@
     "redis standalone",
     "redis inmemory",
     "redis memory",
-    "in-memory"
+    "in-memory",
+    "filebased"
   ],
   "contributors": [
+    "Aiman Shaharuddin <psyntium@gmail.com>",
     "lahabana (Charly Molter) <charly.molter@gmail.com>",
     "yeahoffline (Frank) <frank.gasser@gmail.com>",
     "cmawhorter (cory) <cory.mawhorter@gmail.com>",
@@ -42,8 +45,8 @@
     "matthewmatician (Matthew Larson) <matthewmatician@gmail.com>"
   ],
   "bugs": {
-    "url": "https://github.com/yeahoffline/redis-mock/issues",
-    "email": "frank.gasser@gmail.com"
+    "url": "https://github.com/psyntium/redis-filebased-mock/issues",
+    "email": "psyntium@gmail.com"
   },
   "engine": "node >= 0.10.0"
 }

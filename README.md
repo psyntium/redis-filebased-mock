@@ -154,7 +154,7 @@ You will need to have a running instance of `redis` on you machine and our tests
 
 
 # Roadmap
-redis-mock is work in progress, feel free to report an issue
+redis-filebased-mock is work in progress, feel free to report an issue
 
 
 # Versions
