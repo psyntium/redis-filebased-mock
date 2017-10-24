@@ -1,21 +1,21 @@
 redis-mock
 ============
 
-[![NPM](https://nodei.co/npm/redis-mock.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/redis-mock/)
+[![NPM](https://nodei.co/npm/redis-filebased-mock.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/redis-filebased-mock/)
 
-[![Build Status](https://travis-ci.org/yeahoffline/redis-mock.svg?branch=master)](https://travis-ci.org/yeahoffline/redis-mock)
-[![Coverage Status](https://coveralls.io/repos/yeahoffline/redis-mock/badge.svg)](https://coveralls.io/r/yeahoffline/redis-mock)
+[![Build Status](https://travis-ci.org/psyntium/redis-mock.svg?branch=master)](https://travis-ci.org/psyntium/redis-mock)
+[![Coverage Status](https://coveralls.io/repos/psyntium/redis-mock/badge.svg)](https://coveralls.io/r/psyntium/redis-mock)
 
-The goal of the `redis-mock` project is to create a feature-complete mock of [node_redis](https://github.com/NodeRedis/node_redis), which may be used interchangeably when writing unit tests for code that depends on `redis`.
+The goal of the `redis-filebased-mock` project is to create a feature-complete mock of [node_redis](https://github.com/NodeRedis/node_redis), which may be used interchangeably when writing unit tests for code that depends on `redis`. `redis-filebased-mock` is a fork from `redis-mock`.
 
-All operations are performed in-memory, so no Redis installation is required.
+All operations are performed in-memory and filebased, so no Redis installation is required.
 
 100% Redis-compatible (see [Cross Verification](#cross-verification))
 
 # Installation
 
 ````bash
-$ npm install redis-mock --save-dev
+$ npm install redis-filebased-mock --save-dev
 ````
 
 
@@ -23,18 +23,18 @@ $ npm install redis-mock --save-dev
 
 ### node.js/io.js
 
-The below code demonstrates a example of using the redis-mock client in node.js/io.js
+The below code demonstrates a example of using the redis-filebased-mock client in node.js/io.js
 
 
 ```js
-var redis = require("redis-mock"),
+var redis = require("redis-filebased-mock"),
     client = redis.createClient();
 ```
 
 
 # API
 
-Currently implemented are the following redis commands:
+Currently implemented for `redis-mock` are the following redis commands, however for `redis-filebased-mock` is still working in progress:
 
 ### General
 * createClient
@@ -143,7 +143,7 @@ Currently implemented are the following redis commands:
 # Cross verification
 
 If you want to add new tests to the test base it is important that they work too on node_redis (we are creating a mock...).
-You can therefore run the tests using `redis` instead of `redis-mock`. To do so:
+You can therefore run the tests using `redis` instead of `redis-filebased-mock`. To do so:
 
 ````bash
 $ make check-tests
